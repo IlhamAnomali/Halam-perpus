@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+
+    <title>Perpustakaan Ummuba</title>
+    
+    <style>
+      #daftarBuku, #saran { 
+      display: none; 
+      }
+    </style>
+    
+    <script>
+      function bukaHalaman(id){
+      document.getElementById("beranda").style.display="none";
+      document.getElementById("daftarBuku").style.display="none";
+      document.getElementById("saran").style.display="none"; 
+    
+      document.getElementById(id).style.display="block";
+      }
+    </script>
+    
+</head>
+<body>
+
+    <h2 style="text-align: center;">Perpustakaan Universitas Muhammadiyah Muara Bungo</h2>
+
+    <hr>
+
+    <b>Menu:</b>
+    <ul>
+        <li><a href="#" onclick="bukaHalaman('beranda')">Beranda</a></li>
+        <li><a href="#" onclick="bukaHalaman('daftarBuku')">Daftar Buku</a></li>
+        <li><a href="#" onclick="bukaHalaman('saran')">Saran</a></li>
+    </ul>
+
+    <hr>
+
+    <div id="beranda">
+        <h3>Beranda</h3>
+        <p style="text-align: center;"><b>Selamat datang di Perpustakaan Universitas Muhammadiyah Muara Bungo</b></p>
+        <p>"Perpustakaan adalah rumah bagi para pencari ilmu".</p>
+    </div>
+    
+
+    <div id="daftarBuku">
+        <h3>Daftar Buku</h3>
+        <table border="1" cellspacing="1" cellpadding="5">
+            <tr>
+                <th>No</th>
+                <th>Judul</th>
+                <th>Penulis</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sirah Nabawiyah</td>
+                <td>Syaikh Shafiyyurrahman</td>
+                <td>Tersedia</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Taman Orang Jatuh Cinta</td>
+                <td>Imam Ibnu Qayyim</td>
+                <td>Dipinjam</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Obat Penyakit Hati</td>
+                <td>Imam Ibnu Qayyim</td>
+                <td>Tersedia</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="saran">
+        <h3>Saran</h3>
+        <form>
+            Nama: <input type="text" name="nama"><br><br>
+            Kesan dan Saran:<br>
+            <textarea rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+
+    
+    <footer style="position: fixed; bottom: 0; width: 100%; background-color: #f8f9fa; text-align: center; padding: 10px;">
+        <p style="font-size: 12px;">&copy; Copyright  2025 - By Muhamad Ilham Bukhari - All Rights Reserved..</p>
+        <p style="font-size: 12px;">Nama: [Muhamad Ilham Bukhari] | NIM: [NIM: 231259201033]</p>
+    </footer>
+
+</body>
+</html>
